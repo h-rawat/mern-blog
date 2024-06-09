@@ -14,6 +14,14 @@ export default function Header() {
     });
   }, []);
 
+  function logout() {
+    fetch("http://localhost:4000/logout", {
+      method: "POST",
+      credentials: "include",
+    });
+    setUsername(null);
+  }
+
   return (
     <header>
       <Link to="/">MERN-Blog</Link>
@@ -21,7 +29,7 @@ export default function Header() {
         {username ? (
           <>
             <Link to="/create">Create new post</Link>
-            <a href="">Logout</a>
+            <a onClick={logout}>Logout</a>
           </>
         ) : (
           <>

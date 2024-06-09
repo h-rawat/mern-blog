@@ -40,6 +40,7 @@ header a.logo {
 header nav {
   display: flex;
   gap: 15px;
+  align-items: center;
 }
 
 .post {
@@ -100,4 +101,9 @@ button {
 
 form h1 {
   text-align: center;
+}
+
+.logout-btn {
+  padding: 8px;
+  width: auto;
 }

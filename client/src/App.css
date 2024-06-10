@@ -118,6 +118,7 @@ form.register h1 {
 .logout-btn {
   padding: 8px;
   width: auto;
+  cursor: pointer;
 }
 
 .post-page .Image {
@@ -157,4 +158,31 @@ form.register h1 {
 
 .post-page .content {
   line-height: 1.6rem;
+}
+
+.edit-row {
+  display: flex;
+  justify-content: center;
+}
+
+.edit-btn {
+  text-decoration: none;
+  display: flex;
+  border-radius: 8px;
+  align-items: center;
+  width: auto;
+  padding: 0.5rem 1rem;
+  background: #333;
+  margin-bottom: 1rem;
+}
+
+.edit-btn span {
+  color: white;
+}
+
+.edit-btn svg {
+  color: white;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: 0.5rem;
 }

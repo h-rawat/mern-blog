@@ -29,6 +29,7 @@ export default function Header() {
       <nav>
         {userInfo?.username ? (
           <>
+            <div>Hello, {userInfo?.username}</div>
             <Link to="/create">Create new post</Link>
             <button className="logout-btn" onClick={logout}>
               Logout

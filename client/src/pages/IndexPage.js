@@ -14,10 +14,13 @@ export default function IndexPage() {
 
   return (
     <>
-      {posts.length &&
+      {posts.length ? (
         posts.map((post) => {
           return <Post {...post} key={post._id} />;
-        })}
+        })
+      ) : (
+        <></>
+      )}
     </>
   );
 }

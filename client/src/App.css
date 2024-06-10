@@ -50,9 +50,20 @@ header nav {
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 600px) {
+  .post {
+    grid-template-columns: 1fr;
+  }
+}
+
 .post .texts h2 {
   margin: 0;
   font-size: 1.8rem;
+}
+
+.post .texts a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .post .info {
@@ -107,4 +118,43 @@ form.register h1 {
 .logout-btn {
   padding: 8px;
   width: auto;
+}
+
+.post-page .Image {
+  max-height: 300px;
+  display: flex;
+  overflow: hidden;
+}
+
+.post-page img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.post-page a {
+  color: #333;
+}
+
+.post-page h1 {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.post-page time {
+  display: flex;
+  justify-content: center;
+  font-size: 0.7rem;
+  color: #aaa;
+}
+
+.post-page .author {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.post-page .content {
+  line-height: 1.6rem;
 }
